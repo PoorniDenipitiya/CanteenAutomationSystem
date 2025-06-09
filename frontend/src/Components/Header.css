@@ -174,7 +174,7 @@
 
 .cart-dropdown {
     position: absolute;
-    top: 100%;
+    /*top: 100%;*/
     right: 0;
     background-color: white;
     border: 1px solid #ddd;
@@ -183,6 +183,8 @@
     z-index: 1000;
     display: none;
     padding: 10px;
+    border-radius: 5px;
+    margin-top: -2px;
 }
 
 .cart-icon-header:hover .cart-dropdown {
@@ -222,12 +224,14 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
-
     display: inline-block;
     text-align: center;
     text-decoration: none;
 }
 
+.view-cart-btn{
+    margin-right: 7px;
+}
 .view-cart-btn:hover,
 .checkout-btn:hover {
     background-color: #0056b3;

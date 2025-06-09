@@ -12,6 +12,8 @@ import Canteen from './Canteen/Canteen';
 import './App.css';
 import Order from './Orders/Order';
 import About from "./Home/About";
+import Cart from './cart/viewCart';
+import TrackOrder from './cart/trackOrder';
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/canteen" element={<Canteen />} />
           <Route path="/orders" element={<Order />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/myorder" element={<TrackOrder />} />
         </Routes>
         </div>
         <Footer className="fixed-footer" />
