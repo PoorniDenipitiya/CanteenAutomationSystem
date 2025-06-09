@@ -1,0 +1,44 @@
+.custom-carousel-img {
+    height: 500px; /* Set your desired height */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+
+.box {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.box-img {
+    width: 100%;
+    height: 150px; /* Set your desired height */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.box-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color for better readability */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+

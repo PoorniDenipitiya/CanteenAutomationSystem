@@ -1,0 +1,237 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*background-color: #333;
+    background-color: rgb(233, 51, 18);*/
+    background-color: rgb(239, 28, 71);
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__left h1 {
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
+}
+
+.header__nav {
+    display: flex;
+    gap: 15px;
+}
+
+.active-link {
+    font-weight:bolder; 
+    color: sandybrown;
+}
+
+.header__nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: large;
+    transition: background-color 0.3s;
+}
+
+.header__nav a:hover {
+   /* background-color: #555;*/
+   /*background-color: rgb(202, 124, 140);*/
+   color: rgb(223, 170, 138);
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name{
+    padding: 10px;
+    font-size: larger;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-menu__dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 150px;
+    z-index: 1;
+    color: black;
+    margin-top: 10px;
+}
+
+.user-menu__dropdown span {
+    display: block; /* Ensure the text spans the full width */
+    font-size: 1rem; /* Adjust font size */
+    color: black; /* Dark text color for readability */
+    margin-bottom: 10px; /* Add spacing below the welcome message */
+}
+
+.user-menu__dropdown a {
+    display: block; /* Make links block-level for better spacing */
+    color: black; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 5px; /* Add spacing between links */
+}
+
+.user-menu__dropdown a:hover {
+    color: crimson; /* Add underline on hover */
+}
+
+.user-menu:hover .user-menu__dropdown {
+    display: block;
+}
+
+.user-menu__dropdown button {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    text-align: center; /* Center the text horizontally */
+    width: 100%; /* Full width */
+    
+    
+}
+
+.user-menu__dropdown button:hover {
+    background-color: rgb(239, 28, 71);
+}
+
+.btnNav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    /*background-color: #007bff;*/
+    background-color: seashell;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btnNav:hover {
+   /* background-color: #0056b3;*/
+   background-color: rgb(245, 219, 203);
+}
+
+.cart-container {
+    position: relative;
+}
+
+
+.cart-icon-header {
+    background-color: transparent !important; /* Force removal of background */
+    color: inherit; /* Ensure the icon inherits the text color */
+    border: none; /* Remove any border */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-icon-header i {
+    background-color: transparent !important; /* Remove background from the icon */
+    color: inherit; /* Ensure the icon color matches the text */
+    font-size: 1.5rem; /* Adjust size if needed */
+    border: none; /* Remove any border */
+    padding: 10px; /* Remove padding */
+    justify-content: center;
+}
+
+.cart-count {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 1000;
+    display: none;
+    padding: 10px;
+}
+
+.cart-icon-header:hover .cart-dropdown {
+    display: block;
+}
+
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.view-cart-btn,
+.checkout-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.view-cart-btn:hover,
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+
+

@@ -1,0 +1,32 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   /* Ensure the background color matches your design */
+  }
+  
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Ensure the background color matches your design */
+  }
+  
+  .content {
+    flex: 1;
+    margin-top: 60px; /* Adjust based on header height */
+    margin-bottom: 60px; /* Adjust based on footer height */
+    padding: 20px; /* Optional: Add padding for better spacing */
+   /* background-image: url('../src/Assets/background.jpeg'); // Replace with the actual path to your image 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  }
