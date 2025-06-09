@@ -51,6 +51,8 @@ const authRoute = require("./Routes/AuthRoute");
 const cartRoute = require("./Routes/CartRoute");
 const { MONGO_URL, PORT } = process.env;
 
+
+
 mongoose.set('strictQuery', true);
 
 mongoose
@@ -73,6 +75,9 @@ app.use(
 app.use(cookieParser());
 
 app.use(express.json());
+
+const payhereRoutes = require('./Routes/payhere');
+app.use('/api/payhere', payhereRoutes);
 
 app.use("/", authRoute);
 app.use("/", cartRoute);
